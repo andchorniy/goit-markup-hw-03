@@ -40,6 +40,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -54,6 +55,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -71,6 +73,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 
   width: 696px;
   margin: 0 auto;
@@ -99,6 +102,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 94px;
 }
 .section-title {
   color: var(--title-text-color);
@@ -112,6 +116,10 @@ body {
   margin-top: 0;
   margin-bottom: 50px;
 }
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .feature-list .title {
   color: var(--title-text-color);
 
@@ -119,17 +127,31 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 
   margin-top: 0;
   margin-bottom: 10px;
 }
 
+.work-list {
+  margin-bottom: 94px;
+}
 .our-team {
   color: var(--primary-text-color);
 
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #f5f4fa;
+}
+.photo {
+  margin-bottom: 30px;
+}
+.list-item {
+  padding-bottom: 30px;
 }
 .teammates {
   color: var(--title-text-color);
@@ -137,6 +159,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   font-weight: 500;
+  margin-top: 0;
 }
 footer {
   background-color: #2f303a;
@@ -148,6 +171,8 @@ footer {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  margin-bottom: 30px;
 }
 .address {
   color: var(--primary-white-color);
