@@ -199,7 +199,8 @@ p {
 .list-item {
   padding-bottom: 30px;
   text-align: center;
-  
+  border: 1px solid;
+  border-radius: 0 0 4px 4px;
 }
 .teammates {
   color: var(--title-text-color);
