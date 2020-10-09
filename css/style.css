@@ -102,6 +102,16 @@ body {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .hero .link {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -125,7 +135,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .feature-list {
   display: flex;
@@ -168,11 +179,14 @@ p {
 }
 
 .work-list {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .work-list .list {
   display: flex;
   justify-content: space-between;
+}
+.work-list-item > img {
+  display: block;
 }
 .work-list-item:not(:last-child) {
   margin-right: 30px;
@@ -199,7 +213,7 @@ p {
 .list-item {
   padding-bottom: 30px;
   text-align: center;
-  border: 1px solid;
+  background-color: var(--primary-white-color);
   border-radius: 0 0 4px 4px;
 }
 .teammates {
@@ -240,8 +254,12 @@ footer {
 .address .link {
   color: rgba(255, 255, 255, 0.6);
 }
-.contact-list {
-  margin-top: 9px;
+.contact-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+.street {
+  display: inline-block;
+  margin-bottom: 9px;
 }
 .button {
   color: var(--title-text-color);
@@ -256,6 +274,7 @@ footer {
 
   border: 0;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 .button-list .item:not(:last-child) {
   margin-right: 8px;
@@ -270,12 +289,19 @@ footer {
   color: var(--primary-white-color);
   background: var(--accent-color);
 }
+.description {
+  border: 1px solid #eeeeee;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-top-width: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+}
 .portfolio-item {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
 
-  padding-bottom: 20px;
   width: calc((100% - 60px) / 3);
 }
 .portfolio-item:not(:nth-child(3n)) {
@@ -290,7 +316,6 @@ footer {
 }
 .img {
   display: block;
-  margin-bottom: 20px;
   margin-right: 0;
 }
 .title-item {
@@ -304,5 +329,6 @@ footer {
   margin-top: 0;
 }
 .container-portfolio {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
