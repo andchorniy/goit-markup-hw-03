@@ -297,7 +297,9 @@ footer {
   padding-left: 24px;
   padding-right: 24px;
 }
-.portfolio-item {
+.portfolio-item .link {
+  color: var(--primary-text-color);
+
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
